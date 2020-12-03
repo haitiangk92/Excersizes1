@@ -3,9 +3,7 @@ package bankClass;
 public class Main {
 
 	public static void main(String[] args) {
-		Bank banks[] = new Bank[4];
-		
-		
+		Bank banks[] = new Bank[4];		
 		
 		banks[0] = new Bank(123,(float) Math.round(Math.random() * 100000)/100,"Janet");
 		banks[1] = new Bank(456,(float) Math.round(Math.random() * 100000)/100,"Brian");
@@ -17,7 +15,6 @@ public class Main {
 		for(Bank bank: sorted) {
 			System.out.println(bank);
 		}
-
 	}
 	
 	public static Bank[] sortBankAccounts(Bank[] banks) {
@@ -37,5 +34,4 @@ public class Main {
 		}		
 		return temp;
 	}
- 
 }
